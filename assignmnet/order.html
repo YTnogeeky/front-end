@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order form</title>
+<meta charset="utf-8">
+<style>
+input{
+	margin: 5px 5px 5px 5px;
+}
+label{
+	font-size: 15px;
+	color: purple;
+	font-weight: bold;
+}
+fieldset{
+	border: 2px solid purple;
+	border-radius: 10px;
+	width: 800px;
+}
+table{
+	background-color:black;
+	color: white;
+	border: 3px solid red;
+	margin: 10px 10px 10px 10px;
+}
+td{
+	border: 3px solid #42f4f4;
+}
+th{
+	border: 3px solid #42f4f4;
+}
+</style>
+<link href="style.css" rel="stylesheet" type="text/css"
+media="screen">
+<header>
+<img src="http://2.bp.blogspot.com/-oX-Vwv4UkZs/UKFtEHtGTPI/AAAAAAAAG3E/nZqrcTImhoU/s1600/lulu%20logo.png" width=200 height=100/>
+</header>
+</head>
+<body>
+<h2>
+<a href="http://dblab.itu.edu/home/yueting/assignments/index.html"
+title="Link to Home.html">
+Home</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/about.html"
+title="Link to About Us.html">
+About Us</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/contact.html"
+title="Link to Contact.html">
+Contact</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/new.html"
+title="Link to new.html">
+What's New</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/support.html"
+title="Link to support.html">
+Support</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/faq.html"
+title="Link to faq.html">
+FAQ</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/products.html"
+title="Link to products.html">
+Products</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/order.html"
+title="Link to order.html">
+Order</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/multimedia.html"
+title="Link to multimedia.html">
+Multimedia</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/jobs.html"
+title="Link to jobs.html">
+Jobs</a>
+</h2>
+
+<section>
+	<header style="color:purple;font-family:arial;font-size:50px">
+	Customer Information
+	</header>
+	<form method="post" action="http://itu.lewebcafe.com/csc525/form.php">
+		<fieldset>
+			<label for="lulu_firstname">First Name:</label>
+			<input type="text" id="lulu_firstname" name="lulu_firstname"></input>
+			<br>
+			
+			<label for="lulu_lastname">Last Name:</label>
+			<input type="text" id="lulu_lastname" name="lulu_lastname"></input>
+			<br>
+			
+			<label for="lulu_streetddress">Street Address:</label>
+			<input type="text" id="lulu_streetaddress" name="lulu_streetaddress"></input>
+			<br>
+			
+			<label for="lulu_city">City:</label>
+			<input type="text" id="lulu_city" name="lulu_city"></input>
+			<br>
+			
+			<label for="lulu_state">State:</label>
+			<input type="text" id="lulu_state" name="lulu_state"></input>
+			<br>
+			
+			<label for="lulu_zip">Zip Code:</label>
+			<input type="text" id="lulu_zip" name="lulu_zip"></input>
+			<br>
+			
+			<label for="lulu_email">Email:</label>
+			<input type="email" id="lulu_email" name="lulu_email"></input>
+			<br>
+			
+			<label for="lulu_phone">Phone:</label>
+			<input type="tel" id="lulu_phone" name="lulu_phone"></input>
+			<br>
+
+			<label for="lulu_card">Credit Card Number:</label>
+			<input type="text" id="lulu_card" name="lulu_card" maxlength="16"></input>
+			<br>
+
+			<label for="lulu_datalist">Pick a card type:</label>
+			<input type="text" id="lulu_cardtype" name="lulu_cardtype" list="cards"></input>
+				<datalist id="cards">
+					<option value="Visa">
+					<option value="American Express">
+					<option value="Master">
+					<option value="Discover">
+					<option value="Union Pay">
+				</datalist>
+			<br>
+			
+			<label for="lulu_expiredate">Expiration Date:</label>
+			<input type="text" id="lulu_expiredate" name="lulu_expiredate" placeholder="mm/yyyy"></input>
+			<br>
+			
+			<label for="lulu_comments">Comments:</label>
+			<textarea id="lulu_comments" name="lulu_comments" rows=10 cols=100 placeholder="Leave comments"></textarea>
+			<br>
+			
+			<input type="submit" name="Submit" value="submit"></input>
+			<input type="reset" name="Reset" value="Reset"></input>
+		</fieldset>
+	</form>
+</section>
+
+<header style="color:purple;font-family:arial;font-size:50px">
+	Order Products
+</header>	
+<section style="border: 2px solid purple; border-radius: 10px;">
+	
+	<table 	rules="all">
+	
+		<tr>
+			<th>Category</th>
+			<th>Description</th>
+			<th>Unit Price</th>
+			<th>Quantity</th>
+			<th>Total Price</th>
+		</tr>
+		
+		<tr>
+			<td rowspan="4">Chinese</td>
+		</tr>
+		
+		<tr>
+			<td>La Tiao</td>
+			<td>$10</td>
+			<td><input id="latiao_count" type="text"></input></td>
+			<td><input id="latiao_total" type="text"></input></td>
+		</tr>
+
+		<tr>
+			<td>Bubble Gum</td>
+			<td>$19</td>
+			<td><input id="bubblegum_count" type="text"></input></td>
+			<td><input id="bubblegum_total" type="text"></input></td>
+		</tr>		
+		
+		<tr>
+			<td>Spicy Peanut</td>
+			<td>$9</td>
+			<td><input id="spicypeanut_count" type="text"></input></td>
+			<td><input id="spicypeanut_total" type="text"></input></td>
+		</tr>		
+		
+		<tr>
+			<td colspan="4" align="right"><label style="color:white;" for="chinese-subotal">Subotal $</label></td>
+			<td><input type="text" id="chinese-subotal"></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="3">Korean</td>
+		</tr>
+		
+		<tr>
+			<td>Candy</td>
+			<td>$11</td>
+			<td><input id="candy_count" type="text"></input></td>
+			<td><input id="candy_total" type="text"></input></td>
+		</tr>
+
+		<tr>
+			<td>Seaweed</td>
+			<td>$8</td>
+			<td><input id="seaweed_count" type="text"></input></td>
+			<td><input id="seaweed_total" type="text"></input></td>
+		</tr>		
+		
+		<tr>
+			<td colspan="4" align="right"><label style="color:white;" for="korean-subotal">Subotal $</label></td>
+			<td><input type="text" id="korean-subotal"></td>
+		</tr>
+		
+		<tr>
+			<td colspan="4" align="right"><label style="color:white;" for="total">Total $</label></td>
+			<td><input type="text" id="total"></td>
+		</tr>
+		
+		
+		
+		
+	</table>
+	
+	
+
+</section>
+
+<div style="position: relative; bottom: 0;">
+<a href="http://dblab.itu.edu/home/yueting/assignments/index.html"
+title="Link to Home.html">
+Home</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/about.html"
+title="Link to About Us.html">
+About Us</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/contact.html"
+title="Link to Contact.html">
+Contact</a>	
+<a href="http://dblab.itu.edu/home/yueting/assignments/new.html"
+title="Link to new.html">
+What's New</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/support.html"
+title="Link to support.html">
+Support</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/faq.html"
+title="Link to faq.html">
+FAQ</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/products.html"
+title="Link to products.html">
+Products</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/order.html"
+title="Link to order.html">
+Order</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/multimedia.html"
+title="Link to multimedia.html">
+Multimedia</a>
+<a href="http://dblab.itu.edu/home/yueting/assignments/jobs.html"
+title="Link to jobs.html">
+Jobs</a>
+
+</body>
+</html>
